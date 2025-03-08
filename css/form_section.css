@@ -1,0 +1,271 @@
+#form_section {
+    background-color: var(--color-2-lighter);
+}
+
+#form_section .form_wrapper {
+    display: grid;
+}
+#form_section .form_wrapper > div,
+#form_section .form_wrapper form {
+    border: 2px solid var(--color-2-light);
+    background-color: var(--gray-white);
+    border-radius: 20px;
+    gap: 1rem;
+}
+#form_section .form_wrapper div h2 {
+    color: var(--color-2-darker)
+}
+#form_section .form_social {
+
+}
+#form_section .form_social p {
+    font-weight: 700;
+}
+#form_section .form_social_el {
+    display: flex;
+    gap: 12px;
+}
+#form_section .form_social_el .form_social_icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--gray-lighter);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form_section .form_social_el .form_social_icon > .tg,
+#form_section .form_social_el .form_social_icon > .vk {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#form_section .form_social_el .form_social_icon > .tg {
+    background-image: url('/icons/telegram_icon.svg');
+}
+#form_section .form_social_el .form_social_icon > .vk {
+    background-image: url('/icons/vk_icon.svg')   
+}
+
+#form_section .form_social_el .form_social_icon:hover {
+    cursor: pointer;
+    background-color: var(--color-1-lighter);
+}
+#form_section .form_social_el .form_social_icon:hover .tg {
+    background-image: url('/icons/telegram_icon_1.svg');
+}
+#form_section .form_social_el .form_social_icon:hover .vk {
+    background-image: url('/icons/vk_icon_1.svg')  
+}
+
+#form_section .form_social_el .form_social_icon:active {
+    background-color: var(--color-1-light);
+}
+
+/* FORM */
+.main-form_el {
+    margin-top: 12px;
+}
+.main-form_el input {
+    margin-top: 5px;
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position-x: 12px;
+    background-position-y: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    border: 1px solid var(--gray-lighter);
+    background-color: var(--gray-lighter);
+    border-radius: 12px;
+}
+.main-form_el input[type='text'] {
+    background-image: url('/icons/user.svg');
+}
+.main-form_el input[type='tel'] {
+    background-image: url('/icons/phone.svg');
+}
+.main-form_el input[type='email'] {
+    background-image: url('/icons/email.svg');
+}
+#name:hover,
+#phone:hover,
+#email:hover {
+    cursor: pointer;
+    border: 1px solid var(--gray-light);
+}
+
+#name:focus,
+#phone:focus,
+#phone:focus {
+    outline: 1px solid var(--gray-light);
+    background-color: var(--gray-white);
+    color: var(--gray-dark);
+}
+
+#form_section .form_wrapper form{
+
+}
+
+#form_section .form_wrapper form .main-form_el {
+    display: flex;
+    flex-direction: column;
+}
+
+#form_section .form_wrapper form .main-form_el {
+    flex-direction: column;
+    margin-top: 20px;
+}
+#form_section .form_wrapper form .main-form_el label {
+    color: var(--gray-medium)
+}
+
+/* need accept */
+
+#form_section .form_wrapper form .need_accept {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+}
+#form_section .form_wrapper form .need_accept input {
+    display: none
+}
+#form_section .form_wrapper form .need_accept label {
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid var(--gray-medium);
+    /* background-color: red; */
+    border-radius: 8px;
+    cursor: pointer;
+}
+#form_section .form_wrapper form .need_accept input + label:hover {
+    background-image: url('/icons/switcher_1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#form_section .form_wrapper form .need_accept input:checked + label {
+    border: 2px solid var(--color-1-main);
+    background-image: url('/icons/switcher_2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#form_section .form_wrapper form .need_accept input:checked + label:hover {
+    border: 2px solid var(--color-1-dark);
+    background-image: url('/icons/switcher_3.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#form_section .form_wrapper form .need_accept p {
+    color: var(--gray-dark);
+}
+
+/* SUBMIT BTN */
+
+#form_section .form_wrapper form > .btn_submit {
+    margin-top: 20px;
+    width: 100%;
+}
+
+#form_section .form_wrapper form > .btn_submit {
+    padding: 15px 0;
+    border-radius: 12px;
+    background-color: var(--color-1-main);
+    font-weight: 700;
+    color: var(--gray-white);
+}
+#form_section .form_wrapper form > .btn_submit:hover {
+    background-color: var(--color-1-light);
+    cursor: pointer;
+}
+#form_section .form_wrapper form > .btn_submit:active {
+    background-color: var(--color-1-dark);
+}
+#form_section .form_wrapper form > .btn_submit[disabled] {
+    background-color: var(--gray-lighter);
+    color: var(--gray-light)
+}
+
+
+
+@media screen and (max-width: 374px) {
+    #form_section .form_wrapper  {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 40px 16px;
+    }
+    #form_section .form_wrapper .form_social_wrapper,
+    #form_section .form_wrapper form {
+        padding: 20px;
+    }
+    #form_section .form_wrapper .form_social_wrapper p,
+    #form_section .form_wrapper .form_social_wrapper .form_social,
+    #form_section .form_wrapper .form_social_wrapper .form_social .form_social_el {
+        margin-top: 20px;
+    }
+    /* need accept block */
+    #form_section .form_wrapper form .need_accept {
+        align-items: flex-start
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    #form_section .form_wrapper  {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 40px 16px;
+    }
+    #form_section .form_wrapper .form_social_wrapper,
+    #form_section .form_wrapper form {
+        padding: 20px;
+    }
+    #form_section .form_wrapper .form_social_wrapper {
+        height: fit-content;
+    }
+    #form_section .form_wrapper .form_social_wrapper p,
+    #form_section .form_wrapper .form_social_wrapper .form_social,
+    #form_section .form_wrapper .form_social_wrapper .form_social .form_social_el {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    #form_section .form_wrapper  {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 80px 45px;
+    }
+    #form_section .form_wrapper .form_social_wrapper,
+    #form_section .form_wrapper form {
+        padding: 40px;
+    }
+    #form_section .form_wrapper .form_social_wrapper {
+        height: fit-content;
+    }
+    #form_section .form_wrapper .form_social_wrapper p,
+    #form_section .form_wrapper .form_social_wrapper .form_social,
+    #form_section .form_wrapper .form_social_wrapper .form_social .form_social_el {
+        margin-top: 24px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    #form_section .form_wrapper  {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 80px 45px;
+    }
+    #form_section .form_wrapper .form_social_wrapper,
+    #form_section .form_wrapper form {
+        padding: 40px;
+    }
+    #form_section .form_wrapper .form_social_wrapper {
+        height: fit-content;
+    }
+    #form_section .form_wrapper .form_social_wrapper p,
+    #form_section .form_wrapper .form_social_wrapper .form_social,
+    #form_section .form_wrapper .form_social_wrapper .form_social .form_social_el {
+        margin-top: 24px;
+    }
+}

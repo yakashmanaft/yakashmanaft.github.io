@@ -1,0 +1,109 @@
+#faq_section h2 {
+    color: var(--gray-darker);
+}
+
+#faq_section .faq_el_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+#faq_section .faq_el_container .faq_el {
+    background-color: var(--gray-lighter);
+    border-radius: 20px;
+    border: 2px solid var(--gray-lighter);
+    height: fit-content;
+}
+#faq_section .faq_el_container .faq_el:hover {
+    border: 2px solid var(--gray-light);
+    cursor: pointer;
+}
+
+#faq_section .faq_el_container .faq_el summary {
+    list-style: none;
+    position: relative;
+}
+#faq_section .faq_el_container .faq_el summary:before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('/icons/mark_down.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#faq_section .faq_el_container details[open] summary:before {
+    content: "";
+    background-image: url('/icons/mark_top.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#faq_section .faq_el_container .faq_el h4 {
+    color: var(--gray-darker);
+}
+
+#faq_section .faq_el_container .faq_el p {
+    color: var(--gray-dark);
+    margin-top: 22px;
+}
+
+@media screen and (max-width: 374px) {
+    #faq_section {
+        padding: 40px 16px;
+    }
+    #faq_section .faq_el_container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 32px;
+    }
+    #faq_section .faq_el_container .faq_el {
+        padding: 20px;
+    }
+    #faq_section .faq_el_container .faq_el h4 {
+        padding-right: 30px;
+    }
+    #faq_section .faq_el_container .faq_el p {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    #faq_section {
+        padding: 40px 16px;
+    }
+    #faq_section .faq_el_container {
+        margin-top: 32px;
+    }
+    #faq_section .faq_el_container .faq_el {
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+    #faq_section {
+        padding: 80px 45px;
+    }
+    #faq_section .faq_el_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+    }
+    #faq_section .faq_el_container .faq_el {
+        padding: 22px 20px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    #faq_section {
+        padding: 80px 45px;
+    }
+    #faq_section .faq_el_container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+    }
+    #faq_section .faq_el_container .faq_el {
+        padding: 22px 20px;
+    }
+}

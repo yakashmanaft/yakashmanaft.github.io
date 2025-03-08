@@ -1,0 +1,22 @@
+
+@media screen and (max-width: 374px) {
+
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+
+}
+@media screen and (min-width: 1366px) {
+    #header_section, 
+    #first-screen_section,
+    .slider_list, 
+    .slider_header,
+    #faq_section,
+    .form_wrapper,
+    #footer_section {
+        max-width: 1420px;
+        margin: 0 auto;
+    }
+}

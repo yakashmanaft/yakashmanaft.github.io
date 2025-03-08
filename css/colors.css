@@ -1,0 +1,33 @@
+:root {
+
+    /* GRAY */
+    --gray-black: #0D0D0D;
+    --gray-darker: #2B2B2B;
+    --gray-dark: #404040;
+    --gray-medium: #999999;
+    --gray-light: #CCCCCC;
+    --gray-lighter: rgba(242, 242, 242, 1);
+    --gray-white: #FFFFFF;
+
+    /* COLOR 1 */
+    --color-1-darker: rgba(166, 16, 41, 1);
+    --color-1-dark: rgba(204, 20, 51, 1);
+    --color-1-main: rgba(242, 48, 81, 1);
+    --color-1-light: rgba(252, 139, 158, 1);
+    --color-1-lighter: rgba(252, 215, 221, 1);
+
+    /* COLOR 2 */
+    --color-2-darker: #554D80;
+    --color-2-dark: #665C99;
+    --color-2-main: #897ACC;
+    --color-2-light: #CBC2F2;
+    --color-2-lighter: rgba(249, 247, 255, 1);
+
+    /* GRADIENT */
+    --gradient-main: linear-gradient(
+        90deg,
+        rgba(137, 122, 204, 1), 
+        rgba(204, 41, 163, 1),
+        rgba(242, 48, 81, 1)
+    )
+}
