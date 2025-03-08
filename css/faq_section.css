@@ -28,7 +28,7 @@
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('icons/mark_down.svg');
+    background-image: url('../icons/mark_down.svg');
     background-repeat: no-repeat;
     background-position: center;
     top: 50%;
@@ -37,7 +37,7 @@
 }
 #faq_section .faq_el_container details[open] summary:before {
     content: "";
-    background-image: url('icons/mark_top.svg');
+    background-image: url('../icons/mark_top.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
