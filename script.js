@@ -235,6 +235,7 @@ form_submit_btn.addEventListener('click', (e) => {
         input_name.value = ''
         input_phone.value = ''
         input_email.value = ''
+        form_submit_btn.disabled = false
     }, 1000)
 })
 
