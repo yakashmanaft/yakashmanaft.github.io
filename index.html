@@ -201,7 +201,7 @@
                     </div>
                 </div>
 
-                <form id="main-form" action="send.php" method="POST">
+                <form id="main-form" action="send.php" method="POST" style="position: relative" >
 
                     <div class="main-form_el">
                         <label for="name" class="text_4" >Имя и фамилия</label>
@@ -210,7 +210,7 @@
 
                     <div class="main-form_el">
                         <label for="phone" class="text_4">Телефон</label>
-                        <input class="maskphone" type="tel" id="phone" name="phone" placeholder="8 800 555 35 35">
+                        <input class="maskphone" type="tel" id="phone" name="phone" placeholder="8 800 555 35 35" maxlength="18">
                     </div>
 
                     <div class="main-form_el">
@@ -224,8 +224,8 @@
                         <p class="text_2">Чек-бокс должен быть на каждом сайте с формой.</p>
                     </div>
 
-                    <input type="submit" value="Отправить">
-                    <button id="form_submit_btn" class="btn_submit" type="submit" name="main-form_btn" form="main-form" value="+1 click btn">Отправить форму</button>
+                    <input id="form_submit_btn" class="btn_submit" type="submit" value="Отправить форму" name="main-form_btn" form="main-form">
+                    <p class="form_warning" style="font-size: 0.8rem;position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); margin-top: 12px; color: var(--color-1-main); text-align: center;">Все поля должны быть заполнены</p>
                 </form>
             </div>
         </section>

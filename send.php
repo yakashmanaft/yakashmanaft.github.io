@@ -18,12 +18,13 @@
 // 	}
 // }
 
-	if (isset($_POST['name'])) {$phone = $_POST['name'];}
-	if (isset($_POST['phone'])) {$name = $_POST['phone'];}
+	if (isset($_POST['name'])) {$phone = $_POST['phone'];}
+	if (isset($_POST['phone'])) {$name = $_POST['name'];}
+	if (isset($_POST['email'])) {$email = $_POST['email'];}
 
 	$myaddres  = "ya.kashmanaft@yandex.ru";
 
-	$mes = "Тема: Тест запроса обратного звонка!\nТелефон: $phone\nИмя: $name";
+	$mes = "Тема: Тест запроса обратного звонка!\nИмя: $name\nТелефон: $phone\nПочта: $email";
 
 	$sub='Тест запроса'; // subject
 	$email='Тест запроса обратного звонка'; // от кого
@@ -46,6 +47,6 @@
 		</script> 
 	</head>
 	<body>
-		<h1>Тест успешный! Мы свяжемся с вами!</h1>
+		<h1 style="margin: 0 auto;">Тест успешный! Мы свяжемся с вами!</h1>
 	</body>
 </html>

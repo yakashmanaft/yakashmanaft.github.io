@@ -128,19 +128,25 @@ document.addEventListener("DOMContentLoaded", function() {
 const form_submit_btn = document.querySelector('#form_submit_btn')
 const accept_form = document.querySelector('#accepted_by_user')
 const accept_label = document.querySelector('#accept_label')
+
+let input_name = document.querySelector('#name');
 let input_phone = document.querySelector('#phone');
+let input_email = document.querySelector('#email');
 
-
+let form_warning = document.querySelector('.form_warning')
 //  условия возможности нажатия кнопки отправить форму
 //  наличие согласия
 accept_label.addEventListener('click', (e) => {
     if(
-        accept_form.checked && 
+        accept_form.checked ||
+        input_name.value === '' ||
         (input_phone.value.length !== 18 || 
-        input_phone.value === '')
+        input_phone.value === '') ||
+        input_email.value === ''
     ) {
         
         form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
         // console.log(accept_form.checked)
         // console.log(input_phone.value)
     } else if (        
@@ -149,13 +155,16 @@ accept_label.addEventListener('click', (e) => {
         input_phone.value !== '')
     ) {
         form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
         // console.log(accept_form.checked)
         // console.log(input_phone.value)
     } 
     else if (input_phone.value === '') {
         form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
     } else {
         form_submit_btn.disabled = false
+        form_warning.style.display = 'none'
         // console.log(accept_form.checked)
         // console.log(input_phone.value)
     }
@@ -164,25 +173,56 @@ accept_label.addEventListener('click', (e) => {
 //= если номер телефона указан
 input_phone.addEventListener('input', (e) => {
     // console.log(input_phone.value)
-    if(input_phone.value === '+' || input_phone.value.length !== 18) {
+    if(
+        input_name.value === '' || input_phone.value === '+' || input_phone.value.length !== 18 || input_email.value === ''
+    ) {
         form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
     } else {
         form_submit_btn.disabled = false
+        form_warning.style.display = 'none'
     }
 })
 
+//= если имя указано
+input_name.addEventListener('input', () => {
+    if(
+        input_name.value === '' ||
+        input_phone.value === '' ||
+        input_email.value === ''
+    ) {
+        form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
+    } else {
+        form_submit_btn.disabled = false
+        form_warning.style.display = 'none'
+    }
+})
+
+//= если почта указана
+input_email.addEventListener('input', () => {
+    if(input_email.value === '') {
+        form_submit_btn.disabled = true
+        form_warning.style.display = 'block'
+    } else {
+        form_submit_btn.disabled = false
+        form_warning.style.display = 'none'
+    }
+})
 
 form_submit_btn.addEventListener('click', (e) => {
     e.preventDefault()
 
     // Данные к отправке
-    console.log(`name: `)
+    console.log(`name: ` + input_name.value)
     console.log(`phone: ` + input_phone.value)
-    console.log(`email: `)
+    console.log(`email: ` + input_email.value)
 
     setTimeout(() => {
         console.log('Данные отправлены')
+        input_name.value = ''
         input_phone.value = ''
+        input_email.value = ''
     }, 1000)
 })
 
