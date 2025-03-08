@@ -43,10 +43,10 @@
 }
 
 #form_section .form_social_el .form_social_icon > .tg {
-    background-image: url('/icons/telegram_icon.svg');
+    background-image: url('icons/telegram_icon.svg');
 }
 #form_section .form_social_el .form_social_icon > .vk {
-    background-image: url('/icons/vk_icon.svg')   
+    background-image: url('icons/vk_icon.svg')   
 }
 
 #form_section .form_social_el .form_social_icon:hover {
@@ -54,10 +54,10 @@
     background-color: var(--color-1-lighter);
 }
 #form_section .form_social_el .form_social_icon:hover .tg {
-    background-image: url('/icons/telegram_icon_1.svg');
+    background-image: url('icons/telegram_icon_1.svg');
 }
 #form_section .form_social_el .form_social_icon:hover .vk {
-    background-image: url('/icons/vk_icon_1.svg')  
+    background-image: url('icons/vk_icon_1.svg')  
 }
 
 #form_section .form_social_el .form_social_icon:active {
@@ -85,13 +85,13 @@
     border-radius: 12px;
 }
 .main-form_el input[type='text'] {
-    background-image: url('/icons/user.svg');
+    background-image: url('icons/user.svg');
 }
 .main-form_el input[type='tel'] {
-    background-image: url('/icons/phone.svg');
+    background-image: url('icons/phone.svg');
 }
 .main-form_el input[type='email'] {
-    background-image: url('/icons/email.svg');
+    background-image: url('icons/email.svg');
 }
 #name:hover,
 #phone:hover,
@@ -144,19 +144,19 @@
     cursor: pointer;
 }
 #form_section .form_wrapper form .need_accept input + label:hover {
-    background-image: url('/icons/switcher_1.svg');
+    background-image: url('icons/switcher_1.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 #form_section .form_wrapper form .need_accept input:checked + label {
     border: 2px solid var(--color-1-main);
-    background-image: url('/icons/switcher_2.svg');
+    background-image: url('icons/switcher_2.svg');
     background-repeat: no-repeat;
     background-position: center;
 }
 #form_section .form_wrapper form .need_accept input:checked + label:hover {
     border: 2px solid var(--color-1-dark);
-    background-image: url('/icons/switcher_3.svg');
+    background-image: url('icons/switcher_3.svg');
     background-repeat: no-repeat;
     background-position: center;
 }

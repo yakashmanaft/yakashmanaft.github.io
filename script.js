@@ -5,16 +5,16 @@ const menu_btn = document.getElementById('menu_btn')
 const menu_btn_label = document.querySelector('.menu_btn')
 
 // Где-то сглупил, не смог поставитть иконки, вывернулся через js
-menu_btn_label.style.backgroundImage = "url('/icons/burger.svg')"
+menu_btn_label.style.backgroundImage = "url('icons/burger.svg')"
 menu_btn_label.style.backgroundRepeat = 'no-repeat'
 menu_btn_label.style.backgroundPosition = 'center'
 
 menu_btn_label.addEventListener('click', () => {
-menu_btn_label.style.backgroundImage = "url('/icons/burger.svg')"
+menu_btn_label.style.backgroundImage = "url('icons/burger.svg')"
     if(menu_btn.checked) {
-        menu_btn_label.style.backgroundImage = "url('/icons/burger.svg')"
+        menu_btn_label.style.backgroundImage = "url('icons/burger.svg')"
     } else {
-        menu_btn_label.style.backgroundImage = "url('/icons/close.svg')"
+        menu_btn_label.style.backgroundImage = "url('icons/close.svg')"
     }
 })
 
@@ -22,11 +22,11 @@ menu_tab_list[0].addEventListener('click', (e) => {
 
     if(e.target.classList.contains('menu_tab')) {
         menu_btn.checked = false
-        menu_btn_label.style.backgroundImage = "url('/icons/burger.svg')"
+        menu_btn_label.style.backgroundImage = "url('icons/burger.svg')"
     }
     if(e.target.tagName === 'A') {
         menu_btn.checked = false
-        menu_btn_label.style.backgroundImage = "url('/icons/burger.svg')"
+        menu_btn_label.style.backgroundImage = "url('icons/burger.svg')"
     }
 })
 

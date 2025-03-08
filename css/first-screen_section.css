@@ -133,12 +133,12 @@
         position: absolute;
     }
     #first-screen_section .image-container .block::after {
-        background-image: url('/img/image_2.png');
+        background-image: url('img/image_2.png');
         left: 90px;
         top: -50px;
     }
     #first-screen_section .image-container .block::before {
-        background-image: url('/img/image_1.png');
+        background-image: url('img/image_1.png');
         left: -90px;
         top: 50px;
     }
@@ -195,12 +195,12 @@
         position: absolute;
     }
     #first-screen_section .image-container .block::after {
-        background-image: url('/img/image_2.png');
+        background-image: url('img/image_2.png');
         left: 30px;
         top: -120px;
     }
     #first-screen_section .image-container .block::before {
-        background-image: url('/img/image_1.png');
+        background-image: url('img/image_1.png');
         left: -30px;
         top: 120px;
     }
@@ -277,12 +277,12 @@
         position: absolute;
     }
     #first-screen_section .image-container .block::after {
-        background-image: url('/img/image_2.png');
+        background-image: url('img/image_2.png');
         left: 30%;
         top: -170px;
     }
     #first-screen_section .image-container .block::before {
-        background-image: url('/img/image_1.png');
+        background-image: url('img/image_1.png');
         left: -30%;
         top: 170px;
     }
@@ -340,12 +340,12 @@
         position: absolute;
     }
     #first-screen_section .image-container .block::after {
-        background-image: url('/img/image_2.png');
+        background-image: url('img/image_2.png');
         left: 30%;
         top: -170px;
     }
     #first-screen_section .image-container .block::before {
-        background-image: url('/img/image_1.png');
+        background-image: url('/yakashmanaft.github.io/img/image_1.png');
         left: -30%;
         top: 170px;
     }

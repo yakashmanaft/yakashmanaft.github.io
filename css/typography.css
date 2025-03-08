@@ -4,7 +4,7 @@
 /* Vladivostok локально */
 @font-face {
     font-family: 'Vladivostok-Bold';
-    src: url('/fonts/Vladivostok-Bold.ttf');
+    src: url('fonts/Vladivostok-Bold.ttf');
 }
 
 h1 {
