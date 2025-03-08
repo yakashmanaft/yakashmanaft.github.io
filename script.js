@@ -174,7 +174,11 @@ accept_label.addEventListener('click', (e) => {
 input_phone.addEventListener('input', (e) => {
     // console.log(input_phone.value)
     if(
-        input_name.value === '' || input_phone.value === '+' || input_phone.value.length !== 18 || input_email.value === ''
+        !accept_form.checked ||
+        input_name.value === '' ||
+        (input_phone.value.length !== 18 || 
+        input_phone.value === '') ||
+        input_email.value === ''
     ) {
         form_submit_btn.disabled = true
         form_warning.style.display = 'block'
@@ -187,8 +191,10 @@ input_phone.addEventListener('input', (e) => {
 //= если имя указано
 input_name.addEventListener('input', () => {
     if(
+        !accept_form.checked ||
         input_name.value === '' ||
-        input_phone.value === '' ||
+        (input_phone.value.length !== 18 || 
+        input_phone.value === '') ||
         input_email.value === ''
     ) {
         form_submit_btn.disabled = true
@@ -201,7 +207,13 @@ input_name.addEventListener('input', () => {
 
 //= если почта указана
 input_email.addEventListener('input', () => {
-    if(input_email.value === '') {
+    if(
+        !accept_form.checked ||
+        input_name.value === '' ||
+        (input_phone.value.length !== 18 || 
+        input_phone.value === '') ||
+        input_email.value === ''
+    ) {
         form_submit_btn.disabled = true
         form_warning.style.display = 'block'
     } else {
