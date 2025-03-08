@@ -201,21 +201,21 @@
                     </div>
                 </div>
 
-                <form id="main-form" action="">
+                <form id="main-form" action="send.php" method="POST">
 
                     <div class="main-form_el">
-                        <label for="name" class="text_4">Имя и фамилия</label>
-                        <input type="text" id="name" placeholder="Иван Иванов">
+                        <label for="name" class="text_4" >Имя и фамилия</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов">
                     </div>
 
                     <div class="main-form_el">
                         <label for="phone" class="text_4">Телефон</label>
-                        <input class="maskphone" type="tel" id="phone" placeholder="8 800 555 35 35">
+                        <input class="maskphone" type="tel" id="phone" name="phone" placeholder="8 800 555 35 35">
                     </div>
 
                     <div class="main-form_el">
                         <label for="email" class="text_4">Почта</label>
-                        <input type="email" id="email" placeholder="mail@example.com">
+                        <input type="email" id="email" name="email" placeholder="mail@example.com">
                     </div>
 
                     <div class="need_accept">
